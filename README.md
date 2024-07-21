@@ -31,7 +31,60 @@ This study follows 7 major questions, the most important of which are as follows
 
 ### 2. https://www.youtube.com/watch?v=q7sgzDH1cR8
 
-### 3. https://www.youtube.com/watch?v=IZfWjg3U3mA&t=357s
+Basic, non parallel processing works by having a queue of instructions lined up to then be executed one by one.
+Each completed instruction then makes its way over to its destination.
+
+![image](https://github.com/user-attachments/assets/f2804a68-11f7-41ef-8134-3589b47f283e)
+
+The main limitation with this approach is the processor's max speed.
+The CPU can only work so fast, due to a multitude of reasons, the main one however being due to heat
+(speeding up the CPU any more could cause it to literally melt).
+
+Parallel processing works by dividing the intructions into multiple smaller queues by utilizing multiple processors.
+This method reduces the overall workload that a single processor needs to complete.
+This however leads to a completely new set of drawbacks, mainly bugs.
+These bugs arise due to dependency issues, where one task in say processor 1 gets finished faster than a task it depends on, that has yet to be completed in processor 2.
+These bugs can include latency, lag, and incorrect/inaccurate information, among other issues.
+A potential fix briefly mentioned in the video is to chain all dependant tasks through the same processor (as shown in the image with the green and orange tasks) to assure they all get done in order.
+
+![image](https://github.com/user-attachments/assets/3f8aa53b-562d-407c-b6ba-e2de5c1b0da7)
+
+
+### 3. https://www.youtube.com/watch?v=IZfWjg3U3mA
+
+Multi Processing Operating refers to using 2 or more CPUs within one computer, all sharing the same core components such as the Bus and RAM.
+Simply put, having 2 processors working simultaneously on completing a queue of 4 tasks is 2x faster than one processor working on those same 4 tasks.
+
+2 types of Multi Processing Operating Systems:
+Symmetric Multiprocessing
+Asymmetric Multiprocessing
+
+Symmetric Multiprocessing:
+Every CPU is connected together in an "equal" manner, where each one of them is allowed to work on any command at any time.
+Each CPU also has access to all other components such as ROM, RAM, peripherals, etc.
+One OS controls all the CPUs
+
+![image](https://github.com/user-attachments/assets/3f0075de-8d7c-4f51-ba8f-ab02c77395ca)
+
+This method causes some issues due to all CPUs accessing different hardware all at the same time, which causes a rather confusing connection network, increasing circuit production costs.
+
+Asymmetric Multiprocessing:
+CPU Hierarchy System
+One processor will act as a "leader", assigning tasks to all other processors under it.
+This leading CPU is in charge of communicating with all other hardware (input/output, RAM, peripherals, etc.)
+Secondary processors are only used to increase the processing speed of the main one by completing instructions in its stead.
+
+![image](https://github.com/user-attachments/assets/4d3d5e8d-a723-463a-aff8-b5f80b00e189)
+
+Advantages of Multiprocessing:
+1. Increased Throughput
+   - More work is able to get done in a shorter amount of time thanks to the ability to work on multiple tasks simultaneously.
+2. Increased Reliability
+   - In case of a processor malfunction or failure, the other processors will still keep running (as opposed to a single processor system, where the entire     system fails as soon as the only CPU gets damaged).
+3. Cost Saving
+   - As opposed to having 4 separate single processor computors, we get the same amount of CPU power condensed into only 1 computor, saving money on hardware like RAM, monitors, and peripheral devices.
+4. Parallel Processing
+   - Since processors can only work on 1 process at a time, having multiple processors will allow us to work on mutiple instructions at once.
 
 ### 4. https://web.archive.org/web/20111125035151/http://www.csa.com/discoveryguides/multicore/review.pdf
 
