@@ -12,7 +12,46 @@ The goal of this paper is to take a look into multi-core processor technology, u
 
 ## Literature Review
 
-Lorem Ipsum
+The studies on parallel hardware and software investigates evolutionary approaches, highlighting their effectiveness for systems with 2-8 cores but noting potential diminishing returns when scaling to 16 or 32 cores. 
+
+This is in line with instruction-level parallelism and reflects the industry's trend of doubling cores per silicon generation. Key areas of focus include ease of programming for parallel systems, efficiency metrics (measured in Million Instructions per Second or MIPS, per Watt, per area of silicon, and per development dollar), and strategies to enhance programmer productivity through human-centric design. It also underscores the importance of testing and orchestrating functionality via libraries and virtual machines for optimal system performance.
+
+In multi-processing operating systems, two or more CPUs within a single computer share core components like the bus and RAM, enabling simultaneous task execution. This arrangement effectively doubles processing speed compared to a single-processor system. Multi-processing systems are categorized into:
+- Symmetric Multiprocessing (SMP): All CPUs are equally connected, allowing any CPU to handle any command and access all system components, including ROM, RAM, and peripherals. A single operating system manages all CPUs, but this can lead to complex connection networks and increased production costs due to simultaneous hardware access by multiple CPUs.
+- Asymmetric Multiprocessing (AMP): AMP features a hierarchical structure where one "leader" CPU assigns tasks to subordinate processors and manages communication with hardware. Secondary processors enhance overall processing speed by executing tasks on behalf of the primary CPU.
+
+The advantages of multi-processing include increased throughput through simultaneous task handling, enhanced system reliability (since other processors continue to function if one fails), cost savings by consolidating CPU power into a single system, and improved parallel processing capabilities.
+
+The history of microprocessors is significantly influenced by Moore's Law, proposed in 1965, which initially predicted that the number of transistors on a processor would double each year. This was revised in 1975 to a doubling every two years, with David House later estimating performance doubling every 1.5 years. However, as processor frequencies reached a plateau, these predictions required adjustment.
+
+To address performance limits, multi-core processors have been developed, typically operating at lower frequencies than single-core processors. This design reduces the stress on each core while maintaining efficiency. For example, increasing a single-core processor's clock frequency by 20% results in only a 13% performance gain but requires 73% more power. Conversely, reducing the clock frequency by 20% decreases power usage by 49% with only a 13% performance loss. Adding a second core to a single-core system can provide a 73% performance increase while maintaining similar power consumption.
+
+The Intel's Pentium 4 exemplified this evolution with frequencies ranging from 1.3 to 3.8 GHz. Despite increasing chip size and transistor count, heat dissipation became a significant challenge. 
+
+Techniques such as the superscalar process enable simultaneous issuance of multiple instructions, pre-fetching, and out-of-order execution. Branch prediction methods help manage branch instructions, and additional techniques like loop unrolling, neural network-based predictors, register renaming, trace caches, reorder buffers, dynamic/software scheduling, and data value prediction contribute to performance enhancements.
+
+Focusing specifically on multicore processors, the studies explore practical issues like power consumption, temperature management, and interconnectivity as more cores are added. Notably, multicore processors require cores to be on a single die. A key advantage is their ability to deliver the performance of a faster single-core processor at lower power dissipation and clock frequency by handling more tasks in parallel. Processor performance is influenced by IPC (instructions per cycle), CPI (clock cycles per instruction), and clock frequency.
+
+Multicore processors enhance thread-level parallelism (TLP) by executing multiple instructions and handling multiple data streams simultaneously. While the main memory is shared, each core has its own cache, and all cores share the system bus. Two configurations for multicore technology include:
+- Homogeneous Cores: All cores are identical, sharing the same hardware, improving performance by dividing complex tasks into simpler ones that can be executed simultaneously. Benefits include reusability and a simpler design.
+- Heterogeneous Cores: This configuration involves specialized cores dedicated to specific applications, such as a DSP core for multimedia tasks. Although more complex, it offers significant performance benefits for specialized tasks. Many multicore processors combine both homogeneous and heterogeneous cores to enhance overall performance.
+
+Performance is also influenced by Amdahl's Law, which states that parallel computing speed is limited by the sequential portion of the process, highlighting the theoretical maximum speedup achievable with multiple processors. While multicore processors operate at lower frequencies to reduce power consumption and heat generation, their close core fabrication minimizes signal attenuation, allowing for efficient data transfer.
+
+“Using absolute execution times, Amdahl's law is in terms of `T_after`, the execution time after an improvement; `T_improved`, the execution time affected by the improvement; `S`, how many times faster the improved part runs, or its speedup; and `T_unaffected`, the execution time unaffected by the improvement. In these terms, Amdahl's Law states that:
+
+![image](https://github.com/user-attachments/assets/a23a4965-15e5-49b2-95f1-2c36b3c02e2e)
+
+However, more insight can be gained from the relative form shown below.
+
+![image](https://github.com/user-attachments/assets/65b0c552-241c-40a0-accb-c8e956b6f704)
+
+In this form it is easier to see what happens to the limit as `S` increases, where `S_overall` reaches a maximum of `1 / 1-f`.”
+
+Despite advantages like improved performance and reduced power consumption, multicore processors face challenges such as heat and power issues, with increased transistor density contributing to higher power consumption. Effective power management, including turning off inactive cores and operating at lower frequencies, is crucial. Success in multicore technology depends on well-designed algorithms that utilize all cores efficiently; inefficient algorithms can lead to core starvation and undermine multicore benefits.
+
+In conclusion, although multicore processors face challenges, their advantages—such as improved performance, lower power consumption, and enhanced parallel processing capabilities—generally outweigh the drawbacks. Proper software design is essential to fully harness multicore technology's potential.
+
 
 ## Analysis
 
