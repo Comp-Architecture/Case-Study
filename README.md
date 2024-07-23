@@ -1,5 +1,7 @@
 # Case-Study: Parallel Processing and Multicore Processors
 
+- by Hariharan Chithra 100812562 & Karlo Khoury-Hillman (100816230) 
+
 ## Introduction
 
 Multicore processors are a parallel computing architecture which consists of at least two or more cores that read and write CPU instructions on a single chip. 
@@ -121,6 +123,21 @@ Improvement in power management:
 
 The advancement of techniques such as Dynamic Voltage and Frequency Scaling (DVFS) and power gating have increased efficiency in power consumption in multicore processors
 
+## Application:
+
+### Mobile Devices
+
+Multicore processors in smartphones and tablets allow for seamless multitasking and efficient handling of complex applications. This architecture enhances performance and responsiveness, enabling users to run multiple apps simultaneously, such as streaming videos while browsing the web or using social media, without noticeable lag or decreased battery life. This efficiency is crucial for maintaining a smooth user experience and extending battery life.
+
+###Artificial Intelligence
+
+AI applications leverage multicore processors to accelerate machine learning model training and inference tasks. Parallel processing allows for the simultaneous handling of vast datasets and complex algorithms, significantly reducing training times for deep learning models and enabling real-time decision-making in applications such as autonomous vehicles, natural language processing, etc.
+
+### Entertainment and Media
+
+In the entertainment industry, multicore processors enhance video rendering, gaming experiences, and content creation. By distributing processing tasks across multiple cores, applications such as video editing software and high-definition games achieve smoother performance, higher quality graphics, and faster processing times, resulting in a better overall user experience.
+
+## Conclusion:
 
 ## References:
 
