@@ -86,11 +86,43 @@ Advantages of Multiprocessing:
 4. Parallel Processing
    - Since processors can only work on 1 process at a time, having multiple processors will allow us to work on mutiple instructions at once.
 
+
 ### 4. https://web.archive.org/web/20111125035151/http://www.csa.com/discoveryguides/multicore/review.pdf
+
+A paragraph summarizing the history of microprocessors, posted under screenshot format due to the information density in the text.
+
+![image](https://github.com/user-attachments/assets/03cadb01-192e-440a-b56f-915b9fef14c3)
+
+(Gordon) Moore's Law:
+The number of transistors in a processor will double each year (said in 1965)
+The number of transistors in a processor will double each 2 years (revised in 1975)
+Computer performance will double each 1.5 years (revised by David House)
+
+![image](https://github.com/user-attachments/assets/6e6c8bfa-439f-4bd2-b3c9-8824560c7813)
+
+David House's prediction needed to be tweaked, as processor frequency reached a plateau (image below is a response from an AI, while unverified, the response still prooves the point that processing frequency has not increased in a while).
+
+![image](https://github.com/user-attachments/assets/d5f843e8-cb4c-4c97-ba4d-9736846ea53d)
+
+Multi-core processors usually run at a lower frequency than single-core ones, reducing the stress on each core while maintaing efficiency.
+
+"By incorporating multiple cores, each core is able to run at a lower frequency, dividing power among them normally given to a single core. The result is a big performance increase over a single core processor. It can be observed that increasing clock frequency by 20% to a single core delivers a 13% performance gain, but requires 73% greater power. Conversely, decreasing clock frequency by 20% reduces power usage by 49%, but causes only 13% performance loss [2]. If a second core is added into the single core architecture, it results in a dual-core processor that at 20% reduced clock frequency; it can effectively deliver 73% more performance while using approximately the same power as a single-core processor at maximum frequency."
+
+Above quote/statistics taken from:
+**https://www.researchgate.net/figure/Performance-comparison-between-a-single-core-and-multi-core-processor_fig1_224105796#:~:text=By%20incorporating%20multiple%20cores%2C%20each%20core%20is%20able,13%25%20performance%20gain%2C%20but%20requires%2073%25%20greater%20power.**
+
+Intel's Pentium 4 had frequencies from 1.3 to 3.8GHz over its 8 year lifetime. Chip size decreased, transistor count increased, heat dissipation reached dangerous levels.
+
+Boosting single-core processor performance:
+Superscalar process that can issue multiple instructions at the same time. Pre-fetches instructions, breaks them down into sub-components, and executes them out of order.
+To overcome branch instructions, the processor needs to gather all necessary information. To save time, it will try to predict which path will be taken. If it's wrong, it throws out all incorrect data and restarts with the correct path (time loss isn't significant). Loop unrolling and neural network based predictors are also used to reduce incorrect predictions.
+
+"Other techniques used for performance enhancement include register renaming, trace caches, reorder buffers, dynamic/software scheduling, and data value prediction." (Included here just for info, will most likely not be used).
+
 
 ### 5. https://ijret.org/volumes/2015v04/i09/IJRET20150409015.pdf
 
-This study largely focuses on the technology of multicore processor technology itself, as well as real-world use case issues regarding power, temperature and interconnectivity issues and the addition of more cores. T
+This study largely focuses on the technology of multicore processor technology itself, as well as real-world use case issues regarding power, temperature and interconnectivity issues and the addition of more cores.
 
 This study should ideally be referenced in the introduction.
 
