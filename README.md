@@ -2,7 +2,17 @@
 
 ## Introduction
 
+Multicore processors are a parallel computing architecture which consists of at least two or more cores that read and write CPU instructions on a single chip. 
+
+The main feature of these processors is their ability to run multiple instructions at the same time, which can decrease the amount of time needed to execute programs when compared to single-core processors, which run instructions one at a time. While single-core processors can have higher core performance, applications optimized for parallel processing will have an overall faster result. 
+
+This approach, however, is theorized to have diminishing returns. According to Moore’s Law, the number of cores on a chip would double once every 18 months when looking at the general progression of this technology(successive silicone generations), however, it is largely believed that while it is extremely beneficial when comparing the differences between each of the earlier generations, such as dual and quad-core, diminishing returns are expected around 8 and 16 more cores.
+
+The goal of this paper is to take a look into multi-core processor technology, understand its impact and evolution, and identify the practical need and application for this technology, as well as its advantages and limitations.
+
 ## Literature Review
+
+Lorem Ipsum
 
 ## Analysis
 
