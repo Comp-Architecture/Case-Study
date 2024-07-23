@@ -55,6 +55,57 @@ In conclusion, although multicore processors face challenges, their advantagesâ€
 
 ## Analysis
 
+Multicore processors have distinct advantages and disadvantages when compared to single-core processors.
+### Advantages:
+
+The main advantages of multi-core processors are as follows:
+
+Improved performance:
+
+Combining several cores on a single die improves performance related to the cache snoop, i.e, data stored in the cache is processed more efficiently when compared to the single-core approach, allowing for it to be cleared for further processes.
+It also allows for the processor to work at a higher overall clock rate. At the same clock frequency, the multicore processor will process more data than the single-core processor
+
+Energy efficiency:
+
+Multicore processors deliver high performance and carry out tasks at a comparatively lower energy rate when compared with a single core processor, which is crucial factor in appliances such as mobile phones which operate on batteries. Also, since the cores are fabricated close to each other on the same chip, the signals between them travel at shorter distances due to which there is less attenuation of signals. Since the signals donâ€™t attenuate much, more data is transferred in a set period without concerns for repetition of data
+
+### Limitations and Challenges:
+
+Despite its advantages, multicore technology faces its own challenges, which are as follows
+
+Power and temperature
+
+While multicore processors use less energy on a per core basis, any unused cores will still consume power. Additionally, multicore processors generate much more heat than single-core processors, which can lead to thermal throttling(The CPU either having parameters to reduce clock speeds to reduce heat and prevent damage, or reduced performance due to heat damage). This can be somewhat mitigated by turning off unused cores
+
+Optimization:
+
+Programmers would need to keep in mind optimizations to take advantage of multi-core processing and would have to spend time optimizing their program to run efficiently on a multicore, as starvation can occur with cores being idle and only one being used to run the program.
+
+Memory and bus handling:
+
+Memory requests to the bus and DRAM would have to be handled to enhance speed and ensure communication between cores. Issues can also occur when multiple cores and reading and writing to the same bus, and there is also a chance of denial of memory to occur as other cores use up memory resources
+
+### Advancements:
+
+The field of multicore processors and parallel processing have had many transformative developments, leading to several improvements and breakthroughs for the technology, some of which are highlighted as follows:
+
+Improved core performance:
+
+Despite plateaus in the efficient addition of further cores, several advancements have been made regarding clock speeds and multithreading. Newer multicore CPU architectures have had a greater focus on improving individual core performance and clock speeds, with major increases in every successive generation.
+
+Cache:
+
+Additional advancements have been made over the years in the efficient use of L3 cache through improvements in cache protocols, greatly improving performance.
+
+Development of new architectures:
+
+The focus on multicore processors has given rise to more efficient multicore architectures such as AMD Ryzen and Intel Xeon which are well known for their multithreading capabilities, significantly increasing parallel processing power and enabling more efficient execution of complex tasks.
+Additionally, these architectures have led to the development of programming models like CUDA for GPU programming, which has simplified the development of parallel applications
+
+Improvement in power management:
+
+The advancement of techniques such as Dynamic Voltage and Frequency Scaling (DVFS) and power gating have increased efficiency in power consumption in multicore processors
+
 ## Application
 
 ## Conclusion
