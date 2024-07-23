@@ -1,6 +1,6 @@
 # Case-Study: Parallel Processing and Multicore Processors
 
-- by Hariharan Chithra 100812562 & Karlo Khoury-Hillman (100816230) 
+- by Hariharan Chithra (100812562) & Karlo Khoury-Hillman (100816230) 
 
 ## Introduction
 
@@ -138,6 +138,11 @@ AI applications leverage multicore processors to accelerate machine learning mod
 In the entertainment industry, multicore processors enhance video rendering, gaming experiences, and content creation. By distributing processing tasks across multiple cores, applications such as video editing software and high-definition games achieve smoother performance, higher quality graphics, and faster processing times, resulting in a better overall user experience.
 
 ## Conclusion:
+
+The advancements in multicore processors and parallel computing have significantly transformed computing efficiency and performance. By integrating multiple cores into a single processor, systems can now handle more tasks simultaneously, improving overall throughput and reliability while reducing power consumption compared to traditional single-core processors. This evolution reflects the industry's shift from merely increasing clock frequencies to leveraging parallelism for enhanced performance, driven by Moore's Law and subsequent innovations in multi-core technology.
+
+Real-world applications highlight the practical benefits of this technology, from boosting the performance of mobile devices and data centers to enhancing computational capabilities in scientific research and artificial intelligence. While challenges such as heat management and power consumption remain, the advantages of multicore processors—such as improved performance, reduced power usage, and greater parallel processing capabilities—demonstrate their critical role in advancing modern computing. Continued research and development in this field promise to address existing limitations and unlock further potential in future applications.
+
 
 ## References:
 
